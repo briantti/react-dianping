@@ -15,7 +15,7 @@ class Hello extends React.Component {
         var arr = [1,2,3];
         return (
             <div>
-                <Header title="hello页面"/>
+                <Header title="hello页面的·"/>
                 <p onClick={this.clickHandler.bind(this)}>hello world {this.state.now}</p>
                 <hr/>
                 <Carousel/>
