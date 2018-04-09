@@ -11,17 +11,13 @@ class App extends React.Component {
         super(props, context);
         this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
         this.state = {
-            initDone: false
+            initDone: true
         }
     }
     render() {
         return (
             <div>
-                {
-                    this.state.initDone
-                        ? this.props.children
-                        : <div>正在加载...</div>
-                }
+                {this.props.children}
             </div>
         )
     }
