@@ -1,6 +1,6 @@
 export default {
     getItem: function (key) {
-        let value
+        let value;
         try {
             value = localStorage.getItem(key)
         } catch (ex) {
