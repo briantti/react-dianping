@@ -31,7 +31,7 @@ class App extends React.Component {
         //将城市信息存储到redux中
         this.props.userInfoActions.update({
             cityName: cityName
-        })
+        });
 
         // 更改状态
         this.setState({
