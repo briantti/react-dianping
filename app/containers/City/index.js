@@ -1,7 +1,6 @@
 import React from 'react'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
 import {connect} from "react-redux";
-gitgit
 import * as userInfoActionsFormOtherFile from "../../actions/userinfo";
 import {bindActionCreators} from "redux";
 import Header from "../../components/Header/index"
