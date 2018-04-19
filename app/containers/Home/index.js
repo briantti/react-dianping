@@ -4,10 +4,8 @@ import HomeHeader from '../../components/HomeHeader/index.js'
 import Category from '../../components/Category/index.js'
 import Ad from './subpage/Ad.js'
 import List from './subpage/List.js'
-import HomeAd from "../../components/HomeAd";
 import {bindActionCreators} from "redux";
 import {connect} from "react-redux";
-import * as userInfoActionsFormOtherFile from "../../actions/userinfo";
 
 class Home extends React.Component{
     constructor(props, context){

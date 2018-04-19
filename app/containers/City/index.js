@@ -33,10 +33,10 @@ class City extends React.Component {
         //修改redux
         const userinfo = this.props.userinfo;
         userinfo.cityName = newCity;
-        this.props.userInfoActions.update(userinfo)
+        this.props.userInfoActions.update(userinfo);
 
         //修改localStoreage
-        LocalStore.setItem(CITYNAME,newCity)
+        LocalStore.setItem(CITYNAME,newCity);
 
         //跳转到首页
         hashHistory.push('/')
