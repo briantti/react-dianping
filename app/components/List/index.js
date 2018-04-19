@@ -10,6 +10,7 @@ class List extends React.Component {
         this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
     }
     render() {
+        //所有商户信息的集合
         const data = this.props.data
         return (
             <div className="list-container">
