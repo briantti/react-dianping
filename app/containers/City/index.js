@@ -3,6 +3,7 @@ import PureRenderMixin from 'react-addons-pure-render-mixin'
 import {connect} from "react-redux";
 import * as userInfoActionsFormOtherFile from "../../actions/userinfo";
 import {bindActionCreators} from "redux";
+import {hashHistory} from 'react-router'
 import Header from "../../components/Header/index"
 import CurrentCity from "../../components/CurrentCity/index"
 import CityList from "../../components/CityList/index"

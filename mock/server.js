@@ -30,7 +30,7 @@ router.get('/api/homelist/:city/:page', function *(next) {
 });
 
 // 搜索结果页 - 搜索结果 - 三个参数
-var searchListData = require('./search/list.js')
+let searchListData = require('./search/list.js');
 router.get('/api/search/:page/:city/:category/:keyword', function *(next) {
     // 参数
     const params = this.params;
@@ -89,7 +89,30 @@ router.get('/api/detail/comment/:page/:id', function *(next) {
     this.body = detailComment
 });
 
+//订单列表
+const orderList = require('./orderlist/orderList.js');
+router.get('/api/orderlist/:username',function *(next){
+    console.log('订单列表');
 
+    const params = this.params;
+    const username = params.username;
+    console.log('用户名: ' + username);
+
+    this.body = orderList;
+});
+
+
+// 提交评论
+router.post('/api/submitComment', function *(next) {
+    console.log('提交评论');
+
+    // 获取参数
+
+    this.body = {
+        errno: 0,
+        msg: 'ok'
+    }
+});
 
 // 开始服务并生成路由
 app.use(router.routes())

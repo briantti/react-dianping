@@ -2,7 +2,7 @@ import * as actionTypes from '../constants/userinfo'
 
 export function update(data) {
     return {
-        type: actionTypes.USERINFO_UPDATE,
+        type: actionTypes.USERINFO_LOGIN,
         data
     }
 }
